@@ -1,0 +1,8 @@
+### Centos 7 关闭报警音
+#### 关闭命令行报警音
+`vi /etc/inputrc `
+
+将第二行 set bell-style none 前的#号去掉，重启生效 （centos 7）
+
+#### 关闭vi编辑器报警音
+root用户`vi ~/.bashrc` 写入 setterm -blength 0 重启生效（centos 7）
